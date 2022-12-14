@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".note.AddNote">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow"/>
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/save"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl1"
+            android:layout_marginTop="10dp">
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/txttime"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:hint="time"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/txttime"
+                android:hint="Date"
+                android:textSize="25dp"
+                android:gravity="end"
+                />
+
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/edttitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Title"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_below="@id/rl2"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edtdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/edttitle"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>
